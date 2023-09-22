@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Products With Infinite Scrolling
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Introduction
 
-## Available Scripts
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-In the project directory, you can run:
+This React application is designed to demonstrate the implementation of infinite scrolling using a mock [API](https://dummyjson.com/). The primary objective of this project is to create a dynamic user interface that fetches and displays a list of items from the mock API and seamlessly loads more items as the user scrolls down.
 
-### `npm start`
+## 🚀 View Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="https://img.shields.io/badge/website-up-greene" />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<pre><center><a href="https://infinite-scroller-example.vercel.app/"><b>infinite-scroller-example.vercel.app/</b></a></center></pre>
 
-### `npm test`
+## Key Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. API Integration: We use a mock API endpoint (https://dummyjson.com/products?limit=${limit}) to fetch a list of items. The API accepts one query parameters,that is limit, to control the pagination of items.
 
-### `npm run build`
+2. Infinite Scrolling: As the user scrolls down the page, the application dynamically loads the next set of items, ensuring a seamless and continuous browsing experience. We load 10 items at a time to balance performance and user experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Item Details: Users can click on individual items to view more details. This action opens a modal or a separate page with comprehensive information about the selected item, enhancing the user's ability to explore further.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 👨‍💻 Tech Stack Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   React
+-   Fetch Api
+-   CSS: For styling the user interface and creating an appealing design.
+-   Mock API: A simulated [API](https://dummyjson.com/) that provides mock data for the application.
 
-### `npm run eject`
+## 🛠️ Installation Steps
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Star and Fork the Repo 🌟 and this will keep us motivated.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/adityaK87/Infinite-Scroller-Example.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Change the working directory
 
-## Learn More
+```bash
+cd Infinite-Scroller-Example
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+```
 
-### Code Splitting
+4. Run the app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run start
+```
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Happy Hacking
